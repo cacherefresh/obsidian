@@ -1,3 +1,13 @@
-- uses: peaceiris/actions-gh-pages@v3
-  with:
-    publish_dir: ./site
+site_name: My Obsidian → GitHub Pages
+site_description: Public notes site powered by MkDocs Material
+theme:
+  name: material
+nav:
+  - Home: index.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+plugins:
+  - search
+
